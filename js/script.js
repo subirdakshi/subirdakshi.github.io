@@ -32,10 +32,11 @@ function scrlltop() {
     $('html').scrollTop(0);
 }
 
-$('#mainContent').css('visibility','hidden');
+
 function myLoader(){
     $('#loaderbg').fadeOut();
-    setTimeout(()=>{$('#mainContent').css('visibility','visible')})
-    setTimeout(()=>{$('#mainContent').css('opacity','1')},400)
 }
+$(document).ready(function(){
+    setTimeout(()=>{$('#mainContent').css('opacity','1')},300);
+});
 
